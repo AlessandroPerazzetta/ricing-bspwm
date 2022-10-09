@@ -19,7 +19,6 @@ if [ -x $HOME/.config/bspwm/bspwm_laptop_dual_monitor ];then
 fi
 
 mpd $HOME/.config/mpd/mpd.conf &
-#$HOME/.config/polybar/launch.sh --forest &
 $HOME/.config/polybar/launch.sh &
 
 #change your keyboard if you need it
