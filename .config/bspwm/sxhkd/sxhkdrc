@@ -100,7 +100,7 @@ super + m
 
 #termite
 super + Return
-	termite
+    termite
 
 #Xkill
 super + Escape
@@ -316,8 +316,8 @@ ctrl + shift + Escape
 
 #Scrot
 Print
-    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
-
+    #scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+    scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
 #screeenshooter
 ctrl + Print
      xfce4-screenshooter
@@ -450,6 +450,10 @@ super + BackSpace
 # Move floating window
 super + alt + {_,shift + }{Left,Down,Up,Right}
 	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
+
+# Move window by direction in same workspace
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node --{focus,swap} {west,south,north,east}
 
 #################################################################
 # SUPER + CONTROL KEYS
