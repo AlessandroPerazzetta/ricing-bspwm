@@ -24,12 +24,12 @@ install_config_files() {
 	echo -e "\n[*] Installing config files..."
 	echo -e "\n\t alacritty, bspwm, mpd, nvim, polybar, rofi ..."
 	[[ ! -d "$CDIR" ]] && mkdir -p "$CDIR"
-	cp -rf $DIR/.config/alacritty/* "$CDIR"
-	cp -rf $DIR/.config/bspwm/* "$CDIR"
-	cp -rf $DIR/.config/mpd/* "$CDIR"
-	cp -rf $DIR/.config/nvim/* "$CDIR"
-	cp -rf $DIR/.config/polybar/* "$CDIR"
-	cp -rf $DIR/.config/rofi/* "$CDIR"
+	cp -rf $DIR/.config/alacritty/ "$CDIR"
+	cp -rf $DIR/.config/bspwm/ "$CDIR"
+	cp -rf $DIR/.config/mpd/ "$CDIR"
+	cp -rf $DIR/.config/nvim/ "$CDIR"
+	cp -rf $DIR/.config/polybar/ "$CDIR"
+	cp -rf $DIR/.config/rofi/ "$CDIR"
 }
 
 # Main
