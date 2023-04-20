@@ -10,13 +10,13 @@
 super + F1
 	/opt/brave-bin/brave
 
-# Codium
-super + F2
-	codium
-
 #Xed
-super + F3
+super + F2
     xed
+
+# Codium
+super + F3
+	codium
 
 #Gimp
 super + F4
