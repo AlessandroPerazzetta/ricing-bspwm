@@ -8,7 +8,7 @@
 
 # Brave
 super + F1
-	/usr/bin/brave
+	/opt/brave-bin/brave
 
 # Atom
 super + F2
@@ -94,22 +94,22 @@ super + v
 super + m
     pragha
 
-#alacritty
+#kitty
 #super + Return
-#    alacritty
+#    kitty
 
-#termite
+#kitty
 super + Return
-    termite
+    kitty
 
 #Xkill
 super + Escape
     xkill
 
 #Keyboard dependent
-#alacritty
+#kitty
 super + KP_Enter
-	alacritty
+	kitty
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -205,13 +205,13 @@ ctrl + alt + r
 ctrl + alt + s
    spotify
 
-#alacritty
+#kitty
 ctrl + alt + Return
-    alacritty
+    kitty
 
-#alacritty
+#kitty
 ctrl + alt + t
-    alacritty
+    kitty
 
 #Vivaldi
 ctrl + alt + v
@@ -223,9 +223,9 @@ ctrl + alt + a
 
 
 #Keyboard dependent
-#alacritty
+#kitty
 #ctrl + alt + KP_Enter
-#     alacritty
+#     kitty
 
 
 #################################################################
