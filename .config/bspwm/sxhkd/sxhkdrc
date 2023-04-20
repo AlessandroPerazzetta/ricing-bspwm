@@ -10,9 +10,9 @@
 super + F1
 	/opt/brave-bin/brave
 
-# Atom
+# Codium
 super + F2
-	atom
+	codium
 
 #Inkscape
 super + F3
@@ -58,9 +58,9 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
+#Codium
 super + e
-    atom
+    codium
 
 #Browser
 super + w
@@ -94,11 +94,11 @@ super + v
 super + m
     pragha
 
-#kitty
+#Kitty
 #super + Return
 #    kitty
 
-#kitty
+#Kitty
 super + Return
     kitty
 
@@ -107,7 +107,7 @@ super + Escape
     xkill
 
 #Keyboard dependent
-#kitty
+#Kitty
 super + KP_Enter
 	kitty
 
@@ -205,11 +205,11 @@ ctrl + alt + r
 ctrl + alt + s
    spotify
 
-#kitty
+#Kitty
 ctrl + alt + Return
     kitty
 
-#kitty
+#Kitty
 ctrl + alt + t
     kitty
 
@@ -223,7 +223,7 @@ ctrl + alt + a
 
 
 #Keyboard dependent
-#kitty
+#Kitty
 #ctrl + alt + KP_Enter
 #     kitty
 
