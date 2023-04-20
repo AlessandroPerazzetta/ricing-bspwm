@@ -6,7 +6,7 @@
 # SUPER + FUNCTION KEYS
 #################################################################
 
-# Brave
+#Brave
 super + F1
 	/opt/brave-bin/brave
 
@@ -14,7 +14,7 @@ super + F1
 super + F2
     xed
 
-# Codium
+#Codium
 super + F3
 	codium
 
