@@ -14,9 +14,9 @@ super + F1
 super + F2
 	codium
 
-#Inkscape
+#Xed
 super + F3
-    inkscape
+    xed
 
 #Gimp
 super + F4
