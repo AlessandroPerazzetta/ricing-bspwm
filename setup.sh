@@ -32,6 +32,13 @@ install_config_files() {
 	cp -rf $DIR/.config/rofi/ "$CDIR"
 }
 
+# Set environment LIBGL SOFTWARE (low gpu)
+install_libgl_env() {
+	echo -e "\n[*] Installing LIBGL SOFTWARE to env..."
+	sudo bash -c "echo -e 'LIBGL_ALWAYS_SOFTWARE=true' >> /etc/environment"
+}
+
+sudo sed -i -e "s/EDITOR=nano/EDITOR=vi/g" /etc/environment
 # Main
 main() {
 	clear
@@ -42,6 +49,7 @@ main() {
 
 	install_fonts
 	install_config_files
+	install_libgl_env
 }
 
 main
