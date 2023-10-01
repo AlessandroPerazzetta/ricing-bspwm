@@ -40,7 +40,7 @@ install_libgl_env() {
 
 # Set mouse cursor size
 set_mouse_cursors_size() {
-	echo -e "! ------------------------------------------------------------------------------\n! Mouse Size\n! ------------------------------------------------------------------------------\nXcursor.size: 14" >> $HOME/.Xresources
+	echo -e "! ------------------------------------------------------------------------------\n! Mouse Size\n! ------------------------------------------------------------------------------\nXcursor.size: 14" >> ~/.Xresources
 }
 
 sudo sed -i -e "s/EDITOR=nano/EDITOR=vi/g" /etc/environment
