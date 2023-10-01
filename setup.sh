@@ -38,6 +38,11 @@ install_libgl_env() {
 	sudo bash -c "echo -e 'LIBGL_ALWAYS_SOFTWARE=true' >> /etc/environment"
 }
 
+# Set mouse cursor size
+set_mouse_cursors_size() {
+	echo -e "! ------------------------------------------------------------------------------\n! Mouse Size\n! ------------------------------------------------------------------------------\nXcursor.size: 14" >> $HOME/.Xresources
+}
+
 sudo sed -i -e "s/EDITOR=nano/EDITOR=vi/g" /etc/environment
 # Main
 main() {
@@ -50,6 +55,7 @@ main() {
 	install_fonts
 	install_config_files
 	install_libgl_env
+ 	set_mouse_cursors_size
 }
 
 main
