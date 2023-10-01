@@ -1,0 +1,4 @@
+#!/bin/sh
+
+bspc rule -a keepassxc desktop='^9' follow=off
+bspc rule -a QOwnNotes desktop='^9' follow=off
