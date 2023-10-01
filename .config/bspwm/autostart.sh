@@ -15,7 +15,11 @@ function run {
 #autorandr horizontal
 
 if [ -x $HOME/.config/bspwm/bspwm_laptop_dual_monitor ];then
-    bspwm_laptop_dual_monitor
+    $HOME/.config/bspwm/bspwm_laptop_dual_monitor
+fi
+
+if [ -x $HOME/.config/bspwm/bspwm_desktop_dual_monitor ];then
+    $HOME/.config/bspwm/bspwm_desktop_dual_monitor
 fi
 
 mpd $HOME/.config/mpd/mpd.conf &
