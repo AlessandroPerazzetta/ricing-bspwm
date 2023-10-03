@@ -53,11 +53,13 @@ install_libgl_env() {
 
 # Set mouse cursor size
 set_mouse_cursors_size() {
+	echo -e "\n[*] Set mouse cursor size..."
 	echo -e "! ------------------------------------------------------------------------------\n! Mouse Size\n! ------------------------------------------------------------------------------\nXcursor.size: 14" >> ~/.Xresources
 }
 
 # Set vi as default editor
 set_editor_vi() {
+	echo -e "\n[*] Set vi as default editor..."
 	sudo sed -i -e "s/EDITOR=nano/EDITOR=vi/g" /etc/environment
 }
 
@@ -72,9 +74,9 @@ config_polybar() {
     if ask_confirm "Wireless available"; then modules+="sep wireless-network " ; fi
     modules+="sep date sep sysmenu"
 
-	echo -e "\n + New modules: $modules"
+    echo -e "\n + New modules: $modules"
     sed -i -e "s/modules-right = .*/${modules}/g" $CDIR/polybar/config_single.ini
-	sed -i -e "s/modules-right = .*/${modules}/g" $CDIR/polybar/config_dual.ini
+    sed -i -e "s/modules-right = .*/${modules}/g" $CDIR/polybar/config_dual.ini
 }
 
 # Main
