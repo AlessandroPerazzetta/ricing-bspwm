@@ -88,7 +88,7 @@ main() {
 	install_fonts
 	install_config_files
 	if ask_confirm "Confirm installation libgl to env"; then install_libgl_env; fi
- 	set_mouse_cursors_size
+	if ask_confirm "Confirm set mouse cursor size"; then set_mouse_cursors_size; fi
 	if ask_confirm "Confirm vi as default editor"; then set_editor_vi; fi
     if ask_confirm "Confirm polybar configuration"; then config_polybar; fi
 }
