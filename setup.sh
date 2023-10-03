@@ -65,18 +65,18 @@ set_editor_vi() {
 
 # Configure polybar modules based on system hardware
 config_polybar() {
-    echo -e "\n[*] Configuring polybar..."
-    # modules-right = battery alsa brightness sep wireless-network sep date sep sysmenu
-    modules="modules-right = "
-    if ask_confirm "Battery available"; then modules+="battery " ; fi
-    if ask_confirm "Brightness available"; then modules+="brightness " ; fi
-    modules+="alsa "
-    if ask_confirm "Wireless available"; then modules+="sep wireless-network " ; fi
-    modules+="sep date sep sysmenu"
-
-    echo -e "\n + New modules: $modules"
-    sed -i -e "s/modules-right = .*/${modules}/g" $CDIR/polybar/config_single.ini
-    sed -i -e "s/modules-right = .*/${modules}/g" $CDIR/polybar/config_dual.ini
+	echo -e "\n[*] Configuring polybar..."
+	# modules-right = battery alsa brightness sep wireless-network sep date sep sysmenu
+	modules="modules-right = "
+	if ask_confirm "Battery available"; then modules+="battery " ; fi
+	if ask_confirm "Brightness available"; then modules+="brightness " ; fi
+	modules+="alsa "
+	if ask_confirm "Wireless available"; then modules+="sep wireless-network " ; fi
+	modules+="sep date sep sysmenu"
+	
+	echo -e "\n + New modules: $modules"
+	sed -i -e "s/modules-right = .*/${modules}/g" $CDIR/polybar/config_single.ini
+	sed -i -e "s/modules-right = .*/${modules}/g" $CDIR/polybar/config_dual.ini
 }
 
 # Main
@@ -92,7 +92,7 @@ main() {
 	if ask_confirm "Confirm installation libgl to env"; then install_libgl_env; fi
 	if ask_confirm "Confirm set mouse cursor size"; then set_mouse_cursors_size; fi
 	if ask_confirm "Confirm vi as default editor"; then set_editor_vi; fi
-    if ask_confirm "Confirm polybar configuration"; then config_polybar; fi
+	if ask_confirm "Confirm polybar configuration"; then config_polybar; fi
 }
 
 main
