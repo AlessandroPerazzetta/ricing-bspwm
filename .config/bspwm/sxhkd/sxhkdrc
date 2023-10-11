@@ -315,17 +315,25 @@ ctrl + shift + Escape
 #################################################################
 
 #Scrot
+# Print
+#     #scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+#     scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+# #screeenshooter
+# ctrl + Print
+#      xfce4-screenshooter
+
+# #Gnome-Screenshot
+# ctrl + shift + Print
+#      gnome-screenshot -i
+
 Print
-    #scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
-    scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
-#screeenshooter
+    sleep 0.2; \
+    scrot -s $HOME/'Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png'; \
+    notify-send --urgency=low --hint=string:x-dunst-stack-tag:scrot 'Screenshot taken' 'Selection'
+
 ctrl + Print
-     xfce4-screenshooter
-
-#Gnome-Screenshot
-ctrl + shift + Print
-     gnome-screenshot -i
-
+    scrot $HOME/'Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png'; \
+    notify-send --urgency=low --hint=string:x-dunst-stack-tag:scrot 'Screenshot taken' 'Fullscreen'
 
 #################################################################
 #     FUNCTION KEYS
